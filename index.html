@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="total.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="shortcut icon" href="Media/Aliyev.co-logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <section class="left-section-toggle">
+        <nav class="toggle-container">
+            <p><b>PAGES</b> <svg class="close-left-section" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M17.414 16L24 9.414L22.586 8L16 14.586L9.414 8L8 9.414L14.586 16L8 22.586L9.414 24L16 17.414L22.586 24L24 22.586z" />
+                </svg></p>
+            <ul>
+                <hr>
+                <li><a href="login-page.html">Login</a></li>
+                <hr>
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="all-products.html">Products</a></li>
+                <hr>
+                <li><a href="tweets.html">Tweets</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </section>
+    <section class="container">
+        <header>
+            <div class="main-header">
+                <img class="menu-logo" src="Media/216424_menu_th_icon.svg" alt="menu.logo">
+                <a href="index.html">
+                    <p class="logo">ALIYEV.CO</p>
+                </a>
+                <div class="right">
+                    <div id="fb-root">
+                        <div class="fb-share-button" data-href="https://www.facebook.com/share/p/18LZLtxqQo/"
+                            data-layout="button" data-size="small"><a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F18LZLtxqQo%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share</a></div>
+                    </div>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                        data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <ul class="links">
+                    <li><a href="login-page.html">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">Products</a></li>
+                    <li><a href="tweets.html">Tweets</a></li>
+                </ul>
+                <section class="input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="Search for products..." class="product-searcher">
+                </section>
+                <section class="right-side">
+                    <a href="#Basket"><img src="Media/Basket.svg" alt="Basket.svg"></a>
+                    <a href="login-page.html"><img src="Media/Profile.svg" alt="Profile.svg"></a>
+                </section>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section class="welcome-container">
+                    <img class="my-image" src="Media/My-image.png" alt="">
+                    <h1>WELCOME TO MY WEBSITE FOR </h1>
+                    <div class="holberton-logo-section">
+                        <a href="https://apply.holbertonschool.com">
+                            <img src="https://apply.holbertonschool.com/holberton-logo.png">
+                        </a>
+                        <div class="button-section">
+                            <button onclick="location.href = '#my-projects-container'"><span>My-Project</span> <img
+                                    src="Media/down-arrow-svgrepo-com.svg" alt=""></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-projects-container" id="my-projects-container">
+                    <div class="project-image-container">
+                        <article>
+                            <h1>All products page</h1>
+                            <div class="product-preview">
+                                <img class="background-image" src="Media/All-products-page-screenshot.png"
+                                    alt="project-image">
+                                <a href="all-products.html" target="_blank" class="movedIcon"><img src="Media/link.svg"
+                                        alt="link.icon"></a>
+                                <div class="description">
+
+                                    <p>
+                                        The "All Products" page of this website allows users to browse, filter (not
+                                        activated), and explore a wide range of products in detail. Structurally, the
+                                        page is divided into three main sections: Header, Main, and Footer.
+
+                                        Header
+                                        Located at the top of the page, the header provides essential navigation tools.
+
+                                        On the left side, you'll find the "Aliyev.co" logo. Clicking on it at any time
+                                        redirects the user back to the homepage (Welcome Page).
+
+                                        Next to the logo are navigation links labeled “Shop”, “On Sale”, “New Arrivals”,
+                                        and “Brands”. Although these links are currently inactive, they are placeholders
+                                        for future features and categories.
+
+                                        On the right side, there is a search input field for finding products, a cart
+                                        icon (currently non-functional), and a link to the user profile page. By
+                                        clicking on the profile section, users are redirected to the sign in/sign up
+                                        page.
+
+                                        Main Section
+                                        This is the core of the page and is split into two columns:
+
+                                        On the left, there is a filter panel that allows users to refine products based
+                                        on specific criteria.
+
+                                        On the right, the products grid displays all available items. Clicking on any
+                                        product provides more detailed information about it.
+
+                                        Responsive Design
+                                        The layout has been fully optimized for smaller screens (such as mobile phones
+                                        and tablets) to ensure a smooth user experience:
+
+                                        The filter panel is hidden by default and is accessible via an icon located on
+                                        the right-hand side of the screen.
+
+                                        Tapping this icon reveals the filters, allowing users to apply their preferences
+                                        easily.
+
+                                        The navigation links (“Shop”, “On Sale”, “New Arrivals”, and “Brands”) are
+                                        collapsed into a compact menu icon, and the “Aliyev.co” logo is shifted to the
+                                        right for a cleaner, more streamlined appearance. Users can access the menu
+                                        items by clicking on the icon.
+
+                                        Footer
+                                        Positioned at the bottom of the page, the footer contains contact information,
+                                        social media links, and other helpful resources.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1>Sign up/in page</h1>
+                            <div class="product-preview">
+                                <img class="background-image" src="Media/Login-page-screenshot.png" alt="project-image">
+                                <a href="login-page.html" target="_blank"
+                                    style="background-color: rgba(255, 255, 255, .5);" class="movedIcon"><img
+                                        src="Media/link.svg" alt="link.icon"></a>
+                                <div class="description">
+                                    <p>
+                                        The login page is designed to allow users to securely access their accounts. The
+                                        layout consists of three main sections: Header, Main, and Footer.
+
+                                        Header
+                                        The header appears at the top of the page and maintains a consistent design with
+                                        other pages on the site.
+
+                                        On the left, the "Aliyev.co" logo is displayed. Clicking on it redirects the
+                                        user back to the homepage (Welcome Page).
+
+                                        On the right, there is a link to the profile section.
+
+                                        Main Section
+                                        This central section provides the elements necessary for users to log in:
+
+                                        A welcoming heading greets the user.
+
+                                        An email input field where users can enter their email address.
+
+                                        A password input field for users to enter their password.
+
+                                        A "Forgot Password?" link is present but currently inactive — intended for
+                                        future password recovery functionality.
+
+                                        A Login button that submits the form once the credentials are entered.
+
+                                        A Sign Up option is also available, but it only functions under the following
+                                        conditions:
+
+                                        Both the email and password fields must be filled.
+
+                                        The password must be at least 8 characters long.
+
+                                        If the email is missing or entered in an invalid format, an error message is
+                                        displayed and the sign-up is prevented.
+
+                                        Footer
+                                        Located at the bottom of the page, the footer includes contact details, social
+                                        media links, and other useful information.
+
+                                        Responsive Design
+                                        The login page is fully optimized for mobile and smaller screen sizes. Input
+                                        fields and the login button are scaled and spaced appropriately to ensure a
+                                        smooth and comfortable experience across all devices.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1>Product Details</h1>
+                            <div class="product-preview">
+                                <img class="background-image" src="Media/Product-page-screenshot.png"
+                                    alt="project-image">
+                                <a href="all-products.html" target="_blank" class="movedIcon"><img src="Media/link.svg"
+                                        alt="link.icon"></a>
+                                <div class="description">
+                                    <p>
+                                        The Product Details Page provides users with detailed information about a
+                                        specific product selected from the "All Products" page. Unlike other pages on
+                                        the site, <b style="color: rgb(255, 74, 74)">this page cannot be accessed
+                                            directly via a static link</b>, as it dynamically retrieves product data
+                                        based on the item selected from the product listing (via API). Therefore, users
+                                        must first navigate to the All Products page, select a product, and only then
+                                        are they redirected to this detailed view.
+
+                                        This page is divided into three main sections: Header, Main, and Footer.
+
+                                        Header
+                                        The header remains consistent with other pages on the site.
+
+                                        On the left side, the "Aliyev.co" logo is displayed. Clicking it always
+                                        redirects the user to the homepage (Welcome Page).
+
+                                        Next to the logo are navigational links such as “Shop,” “On Sale,” “New
+                                        Arrivals,” and “Brands.” These are currently non-functional and serve as
+                                        placeholders for future expansion.
+
+                                        On the right side, there's a search bar, a shopping cart icon (non-functional
+                                        for now), and a profile link where users can log in or sign up.
+
+                                        Main Section
+                                        This section is designed to showcase all the key details of a selected product.
+                                        The layout follows a two-column structure:
+
+                                        On the left, there is a product image showing a visual preview of the selected
+                                        item.
+
+                                        On the right, the following product details are displayed in vertical order:
+
+                                        Product Title at the top
+
+                                        Rating section underneath the title
+
+                                        Price shown below the rating
+
+                                        Product Description providing key features or specs
+
+                                        Delivery Time information showing estimated shipping duration
+
+                                        At the bottom-right of the product details section, there is an "Add to Cart"
+                                        button. However, this button is currently non-functional and does not perform
+                                        any action yet.
+
+                                        Footer
+                                        Located at the bottom of the page, the footer includes contact information,
+                                        social media links, and additional resources — similar to other pages across the
+                                        site.
+
+                                        Note on Development
+                                        Due to time constraints, only a basic version of the product page has been
+                                        implemented so far. The design and functionality remain work-in-progress and can
+                                        be enhanced significantly in future iterations — including making the "Add to
+                                        Cart" button functional, refining the layout, and improving responsiveness.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1>Tweets</h1>
+                            <div class="product-preview">
+                                <img class="background-image" src="Media/Tweets-page-screenshot.png"
+                                    alt="project-image">
+                                <a href="tweets.html" target="_blank" class="movedIcon"><img src="Media/link.svg"
+                                        alt="link.icon"></a>
+                                <div class="description">
+                                    <p>
+                                        The Tweets Page is designed to showcase selected embedded tweets related to the
+                                        company "Aliyev.co", with a specific focus on project announcements, updates,
+                                        and other relevant social media interactions.
+
+                                        Just like other pages, this one is structured into three primary sections:
+                                        Header, Main, and Footer.
+
+                                        Header:
+                                        The header retains the consistent layout used throughout the website.
+
+                                        On the left side is the "Aliyev.co" logo, which redirects users to the homepage
+                                        (Welcome Page) when clicked.
+
+                                        Next to the logo are navigation links — “Shop”, “On Sale”, “New Arrivals”, and
+                                        “Brands”. While currently inactive, these links are placeholders for future
+                                        navigation options.
+
+                                        On the right, users will find a search bar, a shopping cart icon (not functional
+                                        at this stage), and a profile link for login or sign-up purposes.
+
+                                        Main Section:
+                                        This section features a vertically arranged feed of embedded tweets directly
+                                        from the official X (formerly Twitter) account of the company.
+
+                                        By integrating live tweets, the page allows users to follow the latest updates
+                                        and engage with ongoing developments without leaving the website.
+
+                                        Responsive Design:
+                                        On smaller devices, tweets are resized appropriately to maintain readability and
+                                        design consistency. Navigation links collapse into a menu icon for better mobile
+                                        usability.
+
+                                        Footer:
+                                        The footer contains standard information including contact details, social media
+                                        links, and access to additional resources — matching the layout of other pages.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </article>
+            <aside>
+                <div id="disqus_thread"></div>
+            </aside>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <section class="footer-middle">
+                    <section class="footer-brand">
+                        <h2>
+                            <a href="index.html">
+                                <p class="logo">ALIYEV.CO</p>
+                            </a>
+                        </h2>
+                        <p class="footer-description">
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        </p>
+                        <address class="footer-contact">
+                            <a href="https://x.com/home">
+                                <div><img style="width: 12px; height: 12px;" src="Media/X_logo_2023.svg"
+                                        alt="twitter.logo"></div>
+                            </a>
+                            <a href="https://www.facebook.com">
+                                <div><img src="Media/logo-fb-simple.svg" alt="facebook.logo"></div>
+                            </a>
+                            <a href="https://www.instagram.com/eliyevfazil1892">
+                                <div><img src="Media/logo-instagram.svg" alt="instagram.logo"></div>
+                            </a>
+                            <a href="https://github.com/ThisIsAliyev">
+                                <div><img src="Media/logo-github.svg" alt="github.logo"></div>
+                            </a>
+                        </address>
+                    </section>
+                    <section class="footer-links">
+                        <article>
+                            <p>COMPANY</p>
+                            <ul>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Features">Features</a></li>
+                                <li><a href="#Works">Works</a></li>
+                                <li><a href="#Career">Career</a></li>
+                            </ul>
+                        </article>
+
+                        <article>
+                            <p>HELP</p>
+                            <ul>
+                                <li><a href="#Customer-Support">Customer Support</a></li>
+                                <li><a href="#Delivery-Details">Delivery Details</a></li>
+                                <li><a href="#Terms&Conditions">Terms & Conditions</a></li>
+                                <li><a href="#Privacy-Policy">Privacy Policy</a></li>
+                            </ul>
+                        </article>
+
+                        <article>
+                            <p>FAQ</p>
+                            <ul>
+                                <li><a href="#Account">Account</a></li>
+                                <li><a href="#Manage-Deliveries">Manage Deliveries</a></li>
+                                <li><a href="#Orders">Orders</a></li>
+                                <li><a href="#Payment">Payment</a></li>
+                            </ul>
+                        </article>
+
+                        <article>
+                            <p>RESOURCES</p>
+                            <ul>
+                                <li><a href="#Free-eBook">Free eBook</a></li>
+                                <li><a href="#Development-Tutorial">Development Tutorial</a></li>
+                                <li><a href="#How-to-Blog">How to - Blog</a></li>
+                                <li><a href="#Youtube-Playlist">Youtube Playlist</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </section>
+                <section class="footer-bottom">
+                    <div class="left-side">
+                        <p>Made by Fazil Aliyev for <a href="https://apply.holbertonschool.com"
+                                target="_blank">Holberton School</a>.</p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </section>
+
+    <script src="total.js"></script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//aliyev-co.disqus.com/count.js" async></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+</body>
+
+</html>

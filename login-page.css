@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url("Fonts/Satoshi-Bold.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url("Fonts/Satoshi-Medium.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Light";
+    src: url("Fonts/Satoshi-Light.otf");
+}
+
+body {
+    & .container {
+        height: auto;
+        & header {
+            margin-bottom: 30px;
+        }
+        & main {
+            width: 100%;
+            display: flex;
+            border: 0;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+            padding: 0;
+            margin-top: 10px;
+
+            & article {
+                height: 100%;
+                box-sizing: border-box;
+                display: grid;
+                place-items: center;
+                background: url(Media/login-background.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                & .login-container {
+                    height: 400px;
+                    width: 70%;
+                    box-sizing: border-box;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Satoshi-Medium";
+
+                    & form {
+                        height: 300px;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        & input,
+                        button {
+                            height: 35px;
+                            outline: none;
+                            box-sizing: border-box;
+                            font-size: 15px;
+                            padding-left: 5px;
+                            border-radius: 5px;
+                            border: 1px solid rgba(255, 255, 255, 0.6);
+                            background: none;
+                            color: white;
+                        }
+
+                        & button {
+                            font-size: 15px;
+                            cursor: pointer;
+                            padding: 0;
+                            background-color: white;
+                            color: black;
+                            border: none;
+                            font-family: "Satoshi-Bold";
+                        }
+
+                        & .error {
+                            color: red;
+                            font-family: "Satoshi-Light";
+                            margin-top: 5px;
+                            margin-bottom: 10px;
+                            display: none;
+                        }
+
+                        & button:hover {
+                            background-color: black;
+                            color: white;
+                            transition: .3s;
+                        }
+
+                        & a {
+                            color: rgb(75, 162, 255);
+                        }
+
+                        & span {
+                                display: flex;
+                                align-items: center;
+
+                                & img {
+                                    width: 20px;
+                                }
+                        }
+                    }
+                }
+            }
+
+            & aside {
+                overflow-y: auto;
+            }
+        }
+
+        & footer {
+            position: relative;
+            padding: 0;
+            margin-top: 30px;
+
+            & .footer-content {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:1250px) {
+    body {
+        & .login-container {
+            & main {
+                & article {
+                    & .login-container {
+                        width: 80%;
+                        font-size: 15px;
+
+                        & h1 {
+                            font-size: 25px;
+                            margin: 10px 0;
+                        }
+                        
+
+                        & form {
+                            font-size: 12px;
+                            height: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:880px) {
+    body {
+        & .login-container {
+            & main {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

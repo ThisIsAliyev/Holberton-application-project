@@ -1,0 +1,179 @@
+body {
+    & .container {
+        height: 1300px !important;
+
+        & main {
+            height: auto;
+            display: flex;
+
+            & article {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                z-index: 101;
+
+                & .product-image {
+                    height: 400px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    & .image-container {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(240, 238, 237, 1);
+                        border-radius: 20px;
+                        background-position: center;
+                        background-size: 50%;
+                        background-repeat: no-repeat;
+                        z-index: 100;
+                        cursor: pointer;
+                    }
+                }
+
+                & .product-informations {
+                    height: auto;
+                    font-family: "Satoshi-Medium";
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    & .info-up {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: start;
+                        height: 250px;
+
+                        & .product-title {
+                            font-family: "Fontspring-bold";
+                            font-size: 28px;
+                            margin: 0 0 15px 0;
+                        }
+
+                        & .product-rating {
+                            font-family: "Satoshi-Light";
+                            background-color: rgba(191, 83, 0, 0.8);
+                            color: rgb(255, 248, 58);
+                            padding: 10px 15px;
+                            border-radius: 50px;
+                            margin-bottom: 15px;
+                        }
+
+                        & .product-price {
+                            font-family: "Satoshi-Bold";
+                            font-size: 32px;
+                        }
+
+                        & .product-description {
+                            color: rgba(0, 0, 0, 0.6);
+                            font-family: "Satoshi-Light";
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                        }
+
+                        & .shopping-information {
+                            display: flex;
+                            width: fit-content;
+                            justify-content: space-between;
+                            padding: 10px;
+                            border-radius: 20px;
+                            border: 1px solid rgba(0, 0, 0, 0.6);
+
+                            & p {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    & .info-down {
+                        width: 100%;
+                        margin-top: 20px;
+
+                        & button {
+                            height: 50px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border-radius: 50px;
+                            border: none;
+                            background-color: black;
+                            color: white;
+                            cursor: pointer;
+                            font-family: "Satoshi-Medium";
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            & aside {
+                flex: 1;
+                z-index: 90;
+            }
+        }
+    }
+}
+
+
+@media (max-width:880px) {
+    body {
+        & .container {
+            & main {
+                gap: 20px;
+                & article {
+                    margin-top: 20px;
+                    flex: auto;
+                    & .product-image {
+                    }
+
+                    & .product-informations {
+                    }
+                }
+
+                & aside {
+                                        flex: auto;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        & .container {
+            & main {
+                & article {
+                    & .product-image {
+                        height: 250px;
+                    }
+
+                    & .product-informations {
+                        & .info-up {
+                            & .product-title {
+                                font-size: 20px;
+                            }
+
+                            & .product-rating {
+                                margin-bottom: 10px;
+
+                                & .rating {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            & .product-price {
+                                font-size: 25px;
+                            }
+
+                            & .shopping-information {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

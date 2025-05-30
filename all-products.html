@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <title>All-Products</title>
+    <link rel="shortcut icon" href="Media/Aliyev.co-logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <section class="left-section-toggle">
+        <nav class="toggle-container">
+            <p><b>PAGES</b> <svg class="close-left-section" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M17.414 16L24 9.414L22.586 8L16 14.586L9.414 8L8 9.414L14.586 16L8 22.586L9.414 24L16 17.414L22.586 24L24 22.586z" />
+                </svg></p>
+            <ul>
+                <hr>
+                <li><a href="login-page.html">Login</a></li>
+                <hr>
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="all-products.html">Products</a></li>
+                <hr>
+                <li><a href="tweets.html">Tweets</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </section>
+    <section class="container">
+        <header>
+            <div class="main-header">
+                <img class="menu-logo" src="Media/216424_menu_th_icon.svg" alt="menu.logo">
+                <a href="index.html">
+                    <p class="logo">ALIYEV.CO</p>
+                </a>
+                <div class="right">
+                    <div id="fb-root">
+                        <div class="fb-share-button" data-href="https://www.facebook.com/share/p/18LZLtxqQo/"
+                            data-layout="button" data-size="small"><a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F18LZLtxqQo%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share</a></div>
+                    </div>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                        data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <ul class="links">
+                    <li><a href="login-page.html">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">Products</a></li>
+                    <li><a href="tweets.html">Tweets</a></li>
+                </ul>
+                <section class="input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="Search for products..." class="product-searcher">
+                </section>
+                <section class="right-side">
+                    <a href="#Basket"><img src="Media/Basket.svg" alt="Basket.svg"></a>
+                    <a href="login-page.html"><img src="Media/Profile.svg" alt="Profile.svg"></a>
+                </section>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section class="pwd">
+                    <span><a href="index.html">Home</a><img src="Media/toRightVector.svg"
+                            alt="Right-Vector.logo">Casual</span>
+                    <div class="filter-icon">
+                        <svg class="filter-toggle-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5">
+                            </path>
+                        </svg>
+                    </div>
+                </section>
+                <section class="products">
+                    <section class="filters">
+                        <div class="filters-container">
+                            <section class="filter-header">
+                                <p>Filters</p>
+                                <svg class="filter-symbol" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5">
+                                    </path>
+                                </svg>
+                                <svg class="close-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M17.414 16L24 9.414L22.586 8L16 14.586L9.414 8L8 9.414L14.586 16L8 22.586L9.414 24L16 17.414L22.586 24L24 22.586z" />
+                                </svg>
+                            </section>
+                            <section class="categories">
+                                <div class="section-header">
+                                    <p>Categories</p>
+                                </div>
+                                <div class="section-main">
+                                    <div class="category">
+                                        <input class="category-checkbox category-element-checkbox-1" value="Beauty"
+                                            type="checkbox" name="beauty">
+                                        <p class="category-element category-element-1">Beauty</p>
+                                    </div>
+                                    <div class="category">
+                                        <input class="category-checkbox category-element-checkbox-2" value="Fragrances"
+                                            type="checkbox" name="fragrances">
+                                        <p class="category-element category-element-2">Fragrances</p>
+                                    </div>
+                                    <div class="category">
+                                        <input class="category-checkbox category-element-checkbox-3" value="Furniture"
+                                            type="checkbox" name="furniture">
+                                        <p class="category-element category-element-3">Furniture</p>
+                                    </div>
+                                    <div class="category">
+                                        <input class="category-checkbox category-element-checkbox-4" value="Groceries"
+                                            type="checkbox" name="groceries">
+                                        <p class="category-element category-element-4">Groceries</p>
+                                    </div>
+
+                                    <div class="groceries"></div>
+                                </div>
+                            </section>
+                            <section class="price-container">
+                                <div class="section-header">
+                                    <p>Price</p>
+                                </div>
+                                <div class="section-main">
+                                    <div class="range-container">
+                                        <div class="ranges">
+                                            <div class="range-background">
+                                                <input type="range" class="min-range" step="5" min="0" max="2500"
+                                                    value="800">
+                                                <input type="range" class="max-range" step="5" min="0" max="2500"
+                                                    value="1500">
+                                            </div>
+                                        </div>
+                                        <div class="range-to-number">
+                                            <input type="number" class="price min-price" value="800">
+                                            <input type="number" class="price max-price" value="1500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="rating">
+                                <div class="section-header">
+                                    <p>Rating</p>
+                                </div>
+                                <div class="section-main">
+                                    <span class="stars" id="star-1">&#9734;</span>
+                                    <span class="stars" id="star-2">&#9734;</span>
+                                    <span class="stars" id="star-3">&#9734;</span>
+                                    <span class="stars" id="star-4">&#9734;</span>
+                                    <span class="stars" id="star-5">&#9734;</span>
+                                </div>
+                                <div class="star-value">-</div>
+                            </section>
+                            <section class="shippingInformation">
+                                <div class="section-header">
+                                    <p>Shipping Information</p>
+                                </div>
+                                <div class="section-main">
+                                    <div class="tags">
+                                        <div class="tag">overnight</div>
+                                        <div class="tag">1-2 business days</div>
+                                        <div class="tag">3-5 business days</div>
+                                        <div class="tag">1 week</div>
+                                        <div class="tag">2 weeks</div>
+                                        <div class="tag">1 month</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="add-tags">
+                                <div class="section-header">
+                                    <p>Add tags</p>
+                                </div>
+
+                                <div class="section-main">
+                                    <form>
+                                        <div class="input-area">
+                                            <input type="text" class="tag-researcher" placeholder="Search for tags">
+                                            <span>#</span>
+                                        </div>
+                                        <div class="list hidden">
+                                        </div>
+                                    </form>
+                                    <div class="added-tags">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="apply">
+                                <div class="container">
+                                    <button class="apply-filter">Apply Filter</button>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section class="casual">
+                        <div class="casual-container">
+                            <section class="casual-heading">
+                                <span>Casual</span>
+                                <div class="sort-by">
+                                    <p class="select-option">
+                                    <p class="select-option-text">Sort by:</p>
+                                    <select name="costum-select">
+                                        <option value="">Most Popular</option>
+                                        <option value="">Best Selling</option>
+                                        <option value="">Price: High to Low</option>
+                                        <option value="">Price: Low to High</option>
+                                        <option value="">Rating: High to Low</option>
+                                        <option value="">Newest Arrivals</option>
+                                        <option value="">Alphabetical: A to Z</option>
+                                        <option value="">Alphabetical: Z to A</option>
+                                    </select>
+                                </div>
+                            </section>
+                            <section class="casual-products">
+                                <!-- <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div> 
+
+                                <div class="box">
+                                    <div class="img"></div>
+                                    <div class="info">
+                                        <div class="title">Gradient Graphic T-shirt</div>
+                                        <div class="rating">3.5/5</div>
+                                        <div class="price">$145</div>
+                                    </div>
+                                </div> -->
+                            </section>
+                            <section class="change-page">
+                                <button onclick="location.href='#Previous'" class="previous-Button"><img
+                                        src="Media/left-arrow-svgrepo-com.svg" alt="previous.icon">
+                                    <span>Previous</span></button>
+                                <div class="pagination">
+                                    <button class="selected-button">1</button>
+                                    <button onclick="location.href='#2nd-page.html'">2</button>
+                                    <button onclick="location.href='#3rd-page.html'">3</button>
+                                    <button onclick="location.href='#4th-page.html'">4</button>
+                                </div>
+                                <button onclick="location.href='#Next'" class="next-Button"><span>Next</span> <img
+                                        src="Media/right-arrow-svgrepo-com.svg" alt="Next.icon"></button>
+                            </section>
+                        </div>
+                    </section>
+                </section>
+            </article>
+            <aside>
+                <div id="disqus_thread"></div>
+            </aside>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <section class="footer-middle">
+                    <section class="footer-brand">
+                        <h2>
+                            <a href="index.html">
+                                <p class="logo">ALIYEV.CO</p>
+                            </a>
+                        </h2>
+                        <p class="footer-description">
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        </p>
+                        <address class="footer-contact">
+                            <a href="https://x.com/home">
+                                <div><img style="width: 12px; height: 12px;" src="Media/X_logo_2023.svg"
+                                        alt="twitter.logo"></div>
+                            </a>
+                            <a href="https://www.facebook.com">
+                                <div><img src="Media/logo-fb-simple.svg" alt="facebook.logo"></div>
+                            </a>
+                            <a href="https://www.instagram.com/eliyevfazil1892">
+                                <div><img src="Media/logo-instagram.svg" alt="instagram.logo"></div>
+                            </a>
+                            <a href="https://github.com/ThisIsAliyev">
+                                <div><img src="Media/logo-github.svg" alt="github.logo"></div>
+                            </a>
+                        </address>
+                    </section>
+                    <section class="footer-links">
+                        <article>
+                            <p>COMPANY</p>
+                            <ul>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Features">Features</a></li>
+                                <li><a href="#Works">Works</a></li>
+                                <li><a href="#Career">Career</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <p>HELP</p>
+                            <ul>
+                                <li><a href="#Customer-Support">Customer Support</a></li>
+                                <li><a href="#Delivery-Details">Delivery Details</a></li>
+                                <li><a href="#Terms&Conditions">Terms & Conditions</a></li>
+                                <li><a href="#Privacy-Policy">Privacy Policy</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <p>FAQ</p>
+                            <ul>
+                                <li><a href="#Account">Account</a></li>
+                                <li><a href="#Manage-Deliveries">Manage Deliveries</a></li>
+                                <li><a href="#Orders">Orders</a></li>
+                                <li><a href="#Payment">Payment</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <p>RESOURCES</p>
+                            <ul>
+                                <li><a href="#Free-eBook">Free eBook</a></li>
+                                <li><a href="#Development-Tutorial">Development Tutorial</a></li>
+                                <li><a href="#How-to-Blog">How to - Blog</a></li>
+                                <li><a href="#Youtube-Playlist">Youtube Playlist</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </section>
+                <section class="footer-bottom">
+                    <div class="left-side">
+                        <p>Made by Fazil Aliyev for <a href="https://apply.holbertonschool.com"
+                                target="_blank">Holberton School</a>.</p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <script src="behavior.js"></script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//aliyev-co.disqus.com/count.js" async></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+</body>
+
+</html>

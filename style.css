@@ -1,0 +1,1228 @@
+/* Fonts: */
+@font-face {
+    font-family: "Fontspring-bold";
+    src: url("Fonts/Fontspring-DEMO-integralcf-bold.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url("Fonts/Satoshi-Bold.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url("Fonts/Satoshi-Medium.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Light";
+    src: url("Fonts/Satoshi-Light.otf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+html,
+body {
+
+    position: relative;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 85%;
+
+        & header {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+            & .main-header {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+
+                & .right {
+                    margin: 0;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: black;
+
+                    & .logo {
+                        font-family: "Fontspring-bold";
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                        margin-right: 20px;
+                        padding: 0;
+                        z-index: 10;
+                    }
+                }
+
+                & .menu-logo {
+                    position: relative;
+                    display: none;
+                    margin-right: 10px;
+                }
+
+                & .links {
+                    width: 24%;
+                    font-family: "Satoshi-Light";
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    & li {
+                        list-style: none;
+
+                        & a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+
+                & .input-wrapper {
+                    position: relative;
+                    display: flex;
+                    flex: 1;
+                    height: 48px;
+                    margin: 0 20px;
+
+                    & input {
+                        display: flex;
+                        flex: 1;
+                        width: 0;
+                        max-width: 100%;
+                        padding-left: 53px;
+                        height: 100%;
+                        font-size: 16px;
+                        border-radius: 62px;
+                        border-style: none;
+                        outline: none;
+                        font-family: "Satoshi-Light";
+                        box-sizing: border-box;
+                        color: black;
+                        background-color: #F0F0F0;
+                    }
+
+                    & input::placeholder {
+                        color: rgba(0, 0, 0, .4);
+                    }
+
+                    & svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 18px;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 20px;
+                        opacity: .4;
+                    }
+                }
+
+                & .right-side {
+                    height: 100%;
+                    width: 62px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    & img {
+                        height: 20.25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        & main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            padding-bottom: 80px;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+
+            & article {
+                flex: 2;
+                z-index: 98;
+
+                & .pwd {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: "Satoshi-Light";
+                    color: rgba(0, 0, 0, .8);
+
+                    & .filter-icon {
+                        width: 50px;
+                        color: black;
+                        display: none;
+                        padding-right: -20px;
+
+                        & svg {
+                            width: 30px;
+                            cursor: pointer;
+                            margin: 0;
+                            margin-top: 6px;
+                            padding: 0;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    & img {
+                        padding: 0 12px 0 8px;
+                    }
+
+                }
+
+                & .products {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    & .filters {
+                        flex: 1;
+                        height: auto;
+                        z-index: 1000;
+                        border-radius: 20px;
+                        display: grid;
+                        place-items: center;
+                        border: 1px solid rgba(0, 0, 0, .06);
+
+                        & .filters-container {
+                            height: 100%;
+                            width: 85%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+
+                            & .section-header {
+                                width: 100%;
+                                height: 75px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                & p {
+                                    font-family: "Satoshi-Medium";
+                                    font-size: 18px
+                                }
+
+                                & svg {
+                                    width: 20px;
+                                    color: rgba(0, 0, 0, 0.4);
+                                    transform: rotate(90deg);
+                                    ;
+                                }
+                            }
+
+                            & .filter-header {
+                                width: 100%;
+                                height: 75px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-bottom: 1px solid rgba(0, 0, 0, .06);
+
+                                & p {
+                                    font-family: "Satoshi-Medium";
+                                    font-size: 18px
+                                }
+
+                                & svg {
+                                    width: 25px;
+                                    color: rgba(0, 0, 0, 0.4);
+                                }
+
+                                & .close-toggle-icon {
+                                    display: none;
+                                }
+
+                                & .close-toggle-icon {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            & .categories {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                border-bottom: 1px solid rgba(0, 0, 0, .06);
+
+                                & .section-main {
+                                    height: 100px;
+                                    width: 100%;
+                                    font-family: "Satoshi-Medium";
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: start;
+
+                                    & .category {
+                                        height: 20px;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: start;
+                                        align-items: center;
+
+                                        & input {
+                                            cursor: pointer;
+                                            margin-right: 5px;
+                                        }
+
+                                        & p {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            & .price-container {
+                                & .section-main {
+                                    height: 100px;
+                                    width: 100%;
+                                    border-bottom: 1px solid rgba(0, 0, 0, .06);
+
+                                    & .range-container {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+
+                                        & .ranges {
+                                            width: 100%;
+                                            height: 50px;
+                                            display: grid;
+                                            place-items: center;
+
+                                            & .range-background {
+                                                width: 100%;
+                                                height: 5px;
+                                                background-color: rgba(0, 0, 0, .5);
+                                                border-radius: 20px;
+                                                position: relative;
+
+                                                & .min-range,
+                                                .max-range {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    background: none;
+                                                    pointer-events: none;
+                                                    -webkit-appearance: none;
+                                                    z-index: 10;
+                                                }
+
+                                                & input[type="range"]::-webkit-slider-thumb {
+                                                    -webkit-appearance: none;
+                                                    height: 20px;
+                                                    width: 20px;
+                                                    pointer-events: auto;
+                                                    cursor: pointer;
+                                                    background-color: white;
+                                                    border-radius: 100%;
+                                                    border: 1px solid rgba(0, 0, 0, .5);
+                                                }
+                                            }
+                                        }
+
+                                        & .range-to-number {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-evenly;
+                                            align-items: center;
+
+                                            & input {
+                                                width: 40%;
+                                                height: 30px;
+                                                display: grid;
+                                                place-items: center;
+                                                outline: none;
+                                                border: 1px solid rgba(0, 0, 0, .06);
+                                                border-radius: 8px;
+                                                background: none;
+                                                font-family: "Satoshi-Light";
+                                                font-size: 15px;
+                                                -webkit-appearance: none;
+                                            }
+
+                                            & input[type="number"]::-webkit-outer-spin-button,
+                                            input[type="number"]::-webkit-inner-spin-button {
+                                                -webkit-appearance: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            & .rating {
+                                width: 100%;
+                                display: grid;
+                                place-items: center;
+                                border-bottom: 1px solid rgba(0, 0, 0, .06);
+
+                                & .section-main {
+                                    display: flex;
+                                    justify-content: center;
+
+                                    & .stars {
+                                        font-size: 20px;
+                                        cursor: pointer;
+                                        padding: 0 5px;
+                                        color: orange;
+                                        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+                                    }
+                                }
+
+                                & .star-value {
+                                    margin: 5px;
+                                    font-family: "Satoshi-Light";
+                                    color: rgba(0, 0, 0, .4)
+                                }
+                            }
+
+                            & .shippingInformation {
+                                width: 100%;
+                                font-family: "Satoshi-Light";
+                                font-size: 15px;
+
+                                & .section-main {
+
+                                    & .tags {
+                                        width: 100%;
+
+                                        & .tag {
+                                            display: inline-block;
+                                            padding: 8px 14px;
+                                            margin: 5px;
+                                            background-color: rgba(0, 0, 0, .0);
+                                            border-radius: 20px;
+                                            border: 1px solid rgba(0, 0, 0, 0.6);
+                                            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+
+                            & .add-tags {
+                                width: 100%;
+
+                                & .section-main {
+                                    & .added-tags {
+                                        width: 100%;
+                                        height: 100px;
+                                        border: 1px solid rgba(0, 0, 0, .5);
+                                        margin-top: 20px;
+                                        border-radius: 10px;
+                                        display: inline-block;
+                                        box-sizing: border-box;
+                                        padding: 4px;
+                                        overflow-y: scroll;
+
+                                        & .selected-tag {
+                                            font-family: "Satoshi-Light";
+                                            font-size: 10px;
+                                            border: 1px solid rgba(0, 0, 0, .5);
+                                            display: inline-block;
+                                            border-radius: 20px;
+                                            margin: 3px;
+                                            cursor: pointer;
+                                            padding: 6px 5px;
+                                            background-color: bisque;
+
+                                            & span {
+                                                padding: 1px;
+                                            }
+                                        }
+                                    }
+
+                                    & form {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        position: relative;
+
+
+                                        & .input-area {
+                                            position: relative;
+
+                                            & input {
+                                                display: inline;
+                                                width: 100%;
+                                                height: 30px;
+                                                box-sizing: border-box;
+                                                border-radius: 20px;
+                                                border: 1px solid rgba(0, 0, 0, .5);
+                                                outline: none;
+                                                padding-left: 25px;
+                                                font-family: "Satoshi-Medium";
+                                                background: none;
+                                            }
+
+                                            & span {
+                                                position: absolute;
+                                                left: 9px;
+                                                top: 10%;
+                                                font-size: 18px;
+                                                font-family: "Satoshi-Medium";
+                                            }
+                                        }
+
+                                        & .list {
+                                            position: absolute;
+                                            top: 40px;
+                                            width: 100%;
+                                            height: 100px;
+                                            border-radius: 4px;
+                                            overflow-y: scroll;
+                                            overflow-x: hidden;
+                                            display: none;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: start;
+                                            border: rgb(219, 219, 219) 1px solid;
+                                            padding-left: 10px;
+                                            box-sizing: border-box;
+                                            z-index: 10;
+                                            background-color: white;
+
+                                            & .label-of-list {
+                                                width: 100%;
+                                                height: 10px;
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 10px;
+                                                font-family: "Satoshi-Medium";
+                                                border-bottom: 1px solid rgba(0, 0, 0, .06);
+                                                cursor: pointer;
+
+                                                & p {
+                                                    padding-left: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            & .apply {
+                                height: 100px;
+                                width: 100%;
+                                display: grid;
+                                place-items: center;
+
+                                & .container {
+                                    height: auto;
+                                    align-items: center;
+
+                                    & button {
+                                        width: 100%;
+                                        height: 48px;
+                                        background-color: black;
+                                        font-family: "Satoshi-Medium";
+                                        border: none;
+                                        border-radius: 50px;
+                                        font-size: 14px;
+                                        color: white;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    & .casual {
+                        height: 100%;
+                        flex: 3;
+                        display: flex;
+                        margin-left: 15px;
+
+                        & .casual-container {
+                            width: 98%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: center;
+
+                            & .casual-heading {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                box-sizing: border-box;
+
+
+                                & span {
+                                    font-family: "Satoshi-Bold";
+                                    font-size: 25px;
+                                }
+
+                                & .sort-by {
+                                    font-size: 12px;
+                                    width: auto;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    & p {
+                                        font-family: "Satoshi-Light";
+                                        white-space: nowrap;
+                                        margin: 0;
+                                    }
+
+                                    & select {
+                                        background: none;
+                                        outline: none;
+                                        border: none;
+                                        font-family: "Satoshi-Medium";
+                                        font-size: 14px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            & .casual-products {
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                column-gap: 15px;
+                                justify-content: space-between;
+                                padding-bottom: 30px;
+                                border-bottom: 1px solid rgba(0, 0, 0, .06);
+
+                                & a {
+                                    width: 100%;
+                                    height: auto;
+                                    margin-top: 25px;
+
+                                    & .box {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: flex-start;
+                                        cursor: pointer;
+
+                                        & .img {
+                                            height: 190px;
+                                            width: 100%;
+                                            aspect-ratio: auto;
+                                            border-radius: 20px;
+                                            background-color: rgba(240, 238, 237, 1);
+                                        }
+
+                                        & .info {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            justify-content: flex-start;
+                                            height: 94px;
+                                            margin-top: 15px;
+
+                                            & .title {
+                                                font-family: "Satoshi-Bold";
+                                                font-size: 18px;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            & .rating {
+                                                font-family: "Satoshi-Light";
+                                                font-size: 14px;
+                                                background-color: rgba(191, 83, 0, 0.8);
+                                                color: rgb(255, 248, 58);
+                                                padding: 4px 7px;
+                                                border-radius: 5px;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            & .price {
+                                                font-family: "Satoshi-Bold";
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            & .change-page {
+                                width: 100%;
+                                height: 80px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-family: "Satoshi-Medium";
+
+                                & img {
+                                    width: 20px;
+                                    display: inline-block;
+                                }
+
+                                & .previous-Button {
+                                    width: 110px;
+                                    height: 36px;
+                                    font-size: 14px;
+                                    background: none;
+                                    border: 1px solid rgba(0, 0, 0, .1);
+                                    border-radius: 8px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    & span {
+                                        margin-left: 5px;
+                                    }
+                                }
+
+                                & .pagination {
+                                    display: flex;
+
+                                    & button {
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 14px;
+                                        background: none;
+                                        color: rgba(0, 0, 0, .5);
+                                        border: none;
+                                        border-radius: 8px;
+                                        cursor: pointer;
+                                        margin: 0 2px;
+                                        cursor: pointer;
+                                    }
+
+                                    & .selected-button {
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 14px;
+                                        background: rgba(0, 0, 0, .06);
+                                        color: black;
+                                        border: none;
+                                        border-radius: 8px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                & .next-Button {
+                                    width: 86px;
+                                    height: 36px;
+                                    font-size: 14px;
+                                    background: none;
+                                    border: 1px solid rgba(0, 0, 0, .1);
+                                    border-radius: 8px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    & span {
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & aside {
+                flex: 1;
+                overflow-y: auto;
+                z-index: 100;
+            }
+        }
+
+        & footer {
+            height: auto;
+            width: 100%;
+            position: relative;
+            padding-top: 80px;
+
+            & .footer-content {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & .footer-middle {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-bottom: 50px;
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+                    & .footer-brand {
+                        height: 100%;
+                        width: 235px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 0;
+
+                        & h2 {
+                            margin: 0;
+
+                            & a {
+                                text-decoration: none;
+                                color: black;
+
+                                & .logo {
+                                    font-family: "Fontspring-bold";
+                                    font-size: 32px;
+                                    z-index: 10;
+                                }
+                            }
+                        }
+
+                        & .footer-description {
+                            font-size: 14px;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+
+                        & .footer-contact {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 148px;
+
+                            & a {
+                                & div {
+                                    width: 28px;
+                                    height: 28px;
+                                    display: grid;
+                                    place-items: center;
+                                    border: 1px solid rgba(0, 0, 0, 0.2);
+                                    border-radius: 100%;
+                                    font-size: 12px;
+
+                                    & img {
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+                                }
+                            }
+
+                            & a:nth-child(2) {
+                                background-color: black;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+
+                    & .footer-links {
+                        display: grid;
+                        grid-template-columns: 150px 150px 150px 150px;
+                        justify-content: space-between;
+                        width: 880px;
+                        height: 100%;
+
+                        & article {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            padding: 0;
+
+                            & p {
+                                font-size: 18px;
+                                font-family: "Satoshi-Medium";
+                                letter-spacing: 5px;
+                            }
+
+                            & ul {
+                                width: auto;
+                                list-style-type: none;
+
+                                & li {
+                                    padding: 10px 0;
+
+                                    & a {
+                                        font-size: 16px;
+                                        font-family: "Satoshi-Light";
+                                        color: rgba(0, 0, 0, 0.6);
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .footer-bottom {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.6);
+                    font-family: "Satoshi-Light";
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    & .left-section-toggle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        background-color: white;
+        z-index: 1001;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 20px;
+        transform: translateX(-105%);
+        transition: transform .5s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+
+        & .toggle-container {
+            width: 100%;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+
+            & p {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 20px;
+                box-sizing: border-box;
+                font-family: "Satoshi-bold";
+
+                & span {
+                    font-family: "Satoshi-Medium";
+                }
+
+                & svg {
+                    cursor: pointer;
+                }
+            }
+
+            & ul {
+                & li {
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px 20px;
+                        font-family: "Satoshi-Light";
+                        text-decoration: none;
+                        color: black;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                        transition: .3s;
+
+                        & a:hover {
+                            background-color: gainsboro;
+                        }
+                    }
+
+                    & a:hover {
+                        background-color: rgba(0, 0, 0, .3);
+                    }
+                }
+
+                & hr {
+                    border: .1px solid black;
+                }
+            }
+        }
+    }
+}
+
+/* RESPONSIVE: */
+
+
+@media (max-width: 1020px) {
+
+    html,
+    body {
+        & .container {
+            & main {
+                & article {
+                    & .products {
+                        & .casual {
+                            & .casual-container {
+                                & .casual-products {
+                                    grid-template-columns: 1fr 1fr;
+
+                                    & .LinkToProduct {
+                                        & .box {
+                                            & .img {
+                                                height: 230px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & aside {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+
+            & footer {
+                & .footer-content {
+                    & .footer-middle {
+                        & .footer-brand {
+                            height: 50%;
+                        }
+
+                        & .footer-links {
+                            width: 50%;
+                            grid-template-columns: 150px 150px;
+                            row-gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+
+    html,
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        & .container {
+            & main {
+                display: flex;
+                flex-direction: column;
+
+                & article {
+                    width: 100%;
+
+                    & .products {
+                        margin-left: 0;
+
+                        & .casual {
+                            box-sizing: border-box;
+
+                            & .casual-container {
+                                & .casual-products {
+                                    & .LinkToProduct {
+                                        & .box {
+                                            & .img {
+                                                height: 300px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & aside {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    html,
+    body {
+        & .container {
+            & main {
+                & aside {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    html,
+    body {
+        height: auto;
+        & .container {
+            & header {
+                & .main-header {
+                    & a {
+                        padding: 0;
+                        & p {
+                            margin: 0px  10px 10px 0px !important;
+                        }
+                    }
+                    & .input-wrapper {
+                        align-items: center;
+                        margin: 0;
+                        & svg {
+                            width: 15px;
+                            left: 10px;
+                        }
+                        & input {
+                            height: 30px;
+                            font-size: 12px;
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+            & main {
+                & article {
+                    padding: 0;
+                    & .products {
+                        box-sizing: border-box;
+                        width: 100%;
+                        & .casual {
+                            & .casual-container {
+                                
+                                & .casual-products {
+                                    & .LinkToProduct {
+                                        & .box {
+                                            display: flex;
+                                            & .img {
+                                                height: 250px;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                & .change-page {
+                                    
+                                    & .previous-Button, .next-Button {
+                                        font-size: 11px;
+                                        width: auto;
+                                        padding: 0 10px;
+
+                                        & img {
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & footer {
+                & .footer-content {
+                    & .footer-middle {
+                        flex-direction: column;
+
+                        & .footer-brand {
+                            width: 100%;
+                            height: 50%;
+                            margin-bottom: 25px;
+                        }
+
+                        & .footer-links {
+                            width: 100%;
+                            grid-template-columns: 150px 200;
+                            row-gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    html,
+    body {
+        height: auto;
+        & .container {
+
+            & header {
+                & .main-header {
+                    & .menu-logo {
+                        width: 20px;
+                    }
+
+                    & a {
+                        padding: 0;
+                        margin: 0;
+                        & .logo {
+                            font-size: 22px;
+                            margin: 0 10px 4px 0 !important;
+                        }
+                    }
+
+                    & .right-side {
+                        width: 50px;
+                        & a {
+                            & img {
+                                width: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & main {
+                & article {
+                    & .products {
+                        & .casual {
+                            & .casual-container {
+                                & .casual-products {
+                                    & .LinkToProduct {
+                                        height: 280px;
+                                        & .box {
+                                            & .img {
+                                                height: 150px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

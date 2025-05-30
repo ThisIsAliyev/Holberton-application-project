@@ -1,0 +1,86 @@
+html,
+body {
+    & .container {
+        height: auto;
+
+        & main {
+            display: flex;
+
+            & article {
+                flex: 2;
+
+                & div {
+                    & h1 {
+                        font-size: 45px;
+                        margin: 20px 0;
+                        font-family: "Satoshi-Bold";
+                    }
+
+                    & .tweets {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 10px;
+
+                        & section {
+                            & .twitter-tweet {
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & aside {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:880px) {
+
+    html,
+    body {
+        & .container {
+            & main {
+                & article {
+                    & div {
+                        & .tweets {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    html,
+    body {
+        & .container {
+            height: auto;
+
+            & main {
+                display: flex;
+
+                & article {
+                    flex: 2;
+
+                    & div {
+                        & h1 {
+                            font-size: 25px;
+                            margin: 20px 0;
+                            font-family: "Satoshi-Bold";
+                        }
+
+                        & .tweets {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
